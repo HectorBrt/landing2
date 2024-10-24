@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez la collection de vêtements uniques de la marque Arte. Style minimaliste et design innovant.">
+    <title>Arte - Marque de Vêtements</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Arte</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Bouton de connexion -->
+        <button id="login-button">Connexion</button>
+
+        <!-- Formulaire de connexion (caché par défaut) -->
+        <section id="login" style="display:none;">
+            <h2>Connexion</h2>
+            <form id="login-form">
+                <div>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit">Se connecter</button>
+            </form>
+        </section>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Exprimez votre style avec Arte</h2>
+        <p>Des vêtements uniques, minimalistes et de qualité.</p>
+    </section>
+
+    <section id="about">
+        <h2>À propos de Arte</h2>
+        <p>Arte est une marque de vêtements qui incarne l'innovation dans le design minimaliste. Chaque pièce est conçue pour allier style et confort.</p>
+    </section>
+
+    <section id="collection">
+        <h2>Notre Collection</h2>
+        <div class="gallery">
+            <div class="card">
+                <img src="img/tee-shirt.jpg" alt="Tee-shirt">
+                <h3>Tee-shirt minimaliste</h3>
+                <p>50 €</p>
+                <button class="add-to-cart" data-name="Tee-shirt minimaliste" data-price="50">Ajouter au panier</button>
+            </div>
+            <div class="card">
+                <img src="img/hoodie.jpg" alt="Hoodie">
+                <h3>Hoodie confortable</h3>
+                <p>80 €</p>
+                <button class="add-to-cart" data-name="Hoodie confortable" data-price="80">Ajouter au panier</button>
+            </div>
+            <div class="card">
+                <img src="img/jacket.jpg" alt="Veste">
+                <h3>Veste chic</h3>
+                <p>120 €</p>
+                <button class="add-to-cart" data-name="Veste chic" data-price="120">Ajouter au panier</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart">
+        <h3>Panier</h3>
+        <ul id="cart-items"></ul>
+        <p>Total : <span id="cart-total">0</span> €</p>
+    </div>
+
+    <footer id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Email: contact@arte.com</p>
+        <p>Téléphone: 01 23 45 67 89</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
